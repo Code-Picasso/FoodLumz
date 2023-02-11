@@ -8,6 +8,7 @@ import {
   Inter_500Medium,
   Inter_700Bold,
 } from "@expo-google-fonts/inter";
+import AppNavigator from "./src/navigation/index/Index";
 
 export default () => {
   let [fontsLoaded] = useFonts({
@@ -23,10 +24,6 @@ export default () => {
       </View>
     );
   } else {
-    return (
-      <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-        <Text>Hello</Text>
-      </View>
-    );
+    return <AppNavigator />;
   }
 };
