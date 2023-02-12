@@ -37,6 +37,7 @@ const styles = StyleSheet.create({
     color: COLORS.white,
     fontSize: SIZES.m,
   },
+
   loginBtn: {
     width: "80%",
     height: "18%",
@@ -44,6 +45,12 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     borderRadius: 50,
+  },
+  signUpBtnTxt: {
+    color: COLORS.white,
+    fontSize: 20,
+    fontWeight: "600",
+    fontfamily: "Inter_700Bold",
   },
   loginBtnTxt: {
     color: COLORS.white,

@@ -1,12 +1,14 @@
 import { View, Text, Image } from "react-native";
 import React from "react";
-import Wrapper from "../../components/wrapper/Wrapper";
+import { useNavigation } from "@react-navigation/native";
 import styles from "./Style";
 import { screenHeight } from "../../style/metrics";
+import Wrapper from "../../components/wrapper/Wrapper";
 import Card from "../../components/card/Card";
 import Input from "../../components/input/Input";
 import Button from "../../components/button/Button";
 const RegisterScreen = () => {
+  const { navigate } = useNavigation();
   const { card, img, inputOne, inputTwo, inputThree, signupBtn, signupBtnTxt } =
     styles;
   return (
@@ -35,7 +37,7 @@ const RegisterScreen = () => {
             btnStyle={signupBtn}
             title="Signup"
             txtStyle={signupBtnTxt}
-            onPress={() => console.log("Hello")}
+            onPress={() => navigate("Login")}
           />
         </Card>
       </View>

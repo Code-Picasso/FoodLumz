@@ -9,7 +9,16 @@ import Button from "../../components/button/Button";
 import { useNavigation } from "@react-navigation/native";
 const LoginScreen = () => {
   const { navigate } = useNavigation();
-  const { card, img, inputOne, inputTwo, loginBtn, loginBtnTxt } = styles;
+  const {
+    card,
+    img,
+    inputOne,
+    inputTwo,
+    loginBtn,
+    loginBtnTxt,
+    signUpBtn,
+    signUpBtnTxt,
+  } = styles;
   return (
     <Wrapper>
       <View
@@ -35,6 +44,12 @@ const LoginScreen = () => {
             btnStyle={loginBtn}
             title="Login"
             txtStyle={loginBtnTxt}
+            onPress={() => navigate("Register")}
+          />
+          <Button
+            btnStyle={signUpBtn}
+            title="Signup"
+            txtStyle={signUpBtnTxt}
             onPress={() => navigate("Register")}
           />
         </Card>
