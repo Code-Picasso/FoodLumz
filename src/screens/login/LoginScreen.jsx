@@ -6,7 +6,9 @@ import { screenHeight } from "../../style/metrics";
 import Card from "../../components/card/Card";
 import Input from "../../components/input/Input";
 import Button from "../../components/button/Button";
+import { useNavigation } from "@react-navigation/native";
 const LoginScreen = () => {
+  const { navigate } = useNavigation();
   const { card, img, inputOne, inputTwo, loginBtn, loginBtnTxt } = styles;
   return (
     <Wrapper>
@@ -33,7 +35,7 @@ const LoginScreen = () => {
             btnStyle={loginBtn}
             title="Login"
             txtStyle={loginBtnTxt}
-            onPress={() => console.log("Hello")}
+            onPress={() => navigate("Register")}
           />
         </Card>
       </View>
