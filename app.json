@@ -4,7 +4,7 @@
     "slug": "FoodLums",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./src/imgs/spalsh-img.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./src/imgs/spalsh-img.png",
