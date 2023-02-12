@@ -7,7 +7,7 @@ import Card from "../../components/card/Card";
 import Input from "../../components/input/Input";
 import Button from "../../components/button/Button";
 const RegisterScreen = () => {
-  const { card, img, inputOne, inputTwo, inputThree, loginBtn, loginBtnTxt } =
+  const { card, img, inputOne, inputTwo, inputThree, signupBtn, signupBtnTxt } =
     styles;
   return (
     <Wrapper>
@@ -30,10 +30,11 @@ const RegisterScreen = () => {
         <Card cardStyle={card}>
           <Input inputStyle={inputOne} placeholder="Name" />
           <Input inputStyle={inputTwo} placeholder="Password" />
+          <Input inputStyle={inputThree} placeholder="Confirm Password" />
           <Button
-            btnStyle={loginBtn}
-            title="Login"
-            txtStyle={loginBtnTxt}
+            btnStyle={signupBtn}
+            title="Signup"
+            txtStyle={signupBtnTxt}
             onPress={() => console.log("Hello")}
           />
         </Card>

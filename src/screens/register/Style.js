@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
     color: COLORS.white,
     fontSize: SIZES.m,
   },
-  loginBtn: {
+  signupBtn: {
     width: "80%",
     height: "18%",
     backgroundColor: COLORS.pink,
@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     borderRadius: 50,
   },
-  loginBtnTxt: {
+  signupBtnTxt: {
     color: COLORS.white,
     fontSize: 20,
     fontWeight: "600",
