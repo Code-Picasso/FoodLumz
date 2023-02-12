@@ -16,13 +16,16 @@
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "softwareKeyboardLayoutMode": "pan"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./src/imgs/spalsh-img.png",
         "backgroundColor": "#D3D3D3"
-      }
+      },
+      "softwareKeyboardLayoutMode": "pan",
+      "windowSoftInputMode": "adjustResize"
     },
     "web": {
       "favicon": "./assets/favicon.png"
