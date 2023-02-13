@@ -8,7 +8,6 @@ import Wrapper from "../../components/wrapper/Wrapper";
 import Header from "../../components/header/Header";
 import Button from "../../components/button/Button";
 import TopDeals from "../../components/topDeals/TopDeals";
-import { ImageSliderBox } from "react-native-image-slider-box";
 
 const HomeScreen = () => {
   const images = useState();
@@ -34,18 +33,6 @@ const HomeScreen = () => {
         }}
       >
         <TopDeals />
-        <ImageSliderBox
-          data={[
-            require("../../imgs/cat-img1.jpg"),
-            require("../../imgs/cat-img2.jpg"),
-            require("../../imgs/cat-img3.jpg"),
-            require("../../imgs/cat-img4.jpg"),
-            require("../../imgs/cat-img5.jpg"),
-          ]}
-          localImg={true}
-          autoPlay={true}
-          caroselImageStyle={{ resizeMode: "contain" }}
-        />
       </View>
     </Wrapper>
   );
