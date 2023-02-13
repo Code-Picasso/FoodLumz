@@ -7,7 +7,7 @@ import AuthNav from "../auth/AuthNavigator";
 const AppNavigator = () => {
   return (
     <NavigationContainer>
-      <AuthNav />
+      <TabNav />
     </NavigationContainer>
   );
 };

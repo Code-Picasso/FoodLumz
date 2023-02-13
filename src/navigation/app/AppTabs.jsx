@@ -7,7 +7,7 @@ const AppTabs = createBottomTabNavigator();
 
 const TabNav = () => {
   return (
-    <AppTabs.Navigator>
+    <AppTabs.Navigator screenOptions={{ headerShown: false }}>
       <AppTabs.Screen name="App" component={AppNav} />
       <AppTabs.Screen name="Meals" component={MealsScreen} />
     </AppTabs.Navigator>

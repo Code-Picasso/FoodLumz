@@ -9,13 +9,15 @@ import CartScreen from "../../screens/cart/CartScreen";
 
 const AppNav = () => {
   return (
-    <AppStack.Group>
-      <AppStack.Screen name="Home" component={HomeScreen} />
-      <AppStack.Screen name="Detail" component={DetailScreen} />
-      <AppStack.Screen name="Success" component={SuccessScreen} />
-      <AppStack.Screen name="Cart" component={CartScreen} />
-    </AppStack.Group>
+    <AppStack.Navigator screenOptions={{ headerShown: false }}>
+      <AppStack.Group>
+        <AppStack.Screen name="Home" component={HomeScreen} />
+        <AppStack.Screen name="Detail" component={DetailScreen} />
+        <AppStack.Screen name="Success" component={SuccessScreen} />
+        <AppStack.Screen name="Cart" component={CartScreen} />
+      </AppStack.Group>
+    </AppStack.Navigator>
   );
 };
 
-export default React.memo(AppNav);
+export default AppNav;
