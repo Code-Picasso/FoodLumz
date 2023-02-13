@@ -1,5 +1,6 @@
 import { StyleSheet } from "react-native";
 import { COLORS, SIZES, screenHeight, screenWidth } from "../../style/index";
+import { isAndroid } from "../../style/metrics";
 const styles = StyleSheet.create({
   header: {
     width: screenWidth,
@@ -10,7 +11,7 @@ const styles = StyleSheet.create({
   },
   headerImg: {
     width: "10%",
-    height: "70%",
+    height: isAndroid ? "70%" : "75%",
     top: 5,
   },
 });

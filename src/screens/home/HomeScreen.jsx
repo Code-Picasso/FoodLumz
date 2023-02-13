@@ -1,29 +1,51 @@
 import { View, Text, Image } from "react-native";
-import React from "react";
+import React, { useState } from "react";
 import Ionicons from "@expo/vector-icons/Ionicons";
+
 import styles from "./Style";
+
 import Wrapper from "../../components/wrapper/Wrapper";
 import Header from "../../components/header/Header";
-import { screenWidth } from "../../style";
+import Button from "../../components/button/Button";
+import TopDeals from "../../components/topDeals/TopDeals";
+import { ImageSliderBox } from "react-native-image-slider-box";
 
 const HomeScreen = () => {
+  const images = useState();
   const { header, headerImg } = styles;
   return (
     <Wrapper>
       <Header header={header} headerImg={headerImg}>
-        <View style={{ left: 10, top: "3%" }}>
+        <Button btnStyle={{ bottom: "2%", left: 15 }}>
           <Ionicons name="exit" size={24} color="#d3d3d3" />
-        </View>
+        </Button>
+
         <Image
           source={require("../../imgs/spalsh-img.png")}
           style={headerImg}
         />
-        <View style={{ top: "3%", right: 10 }}>
+        <Button btnStyle={{ bottom: "2%", right: 15 }}>
           <Ionicons name="cart" size={24} color="#ffffff" />
-        </View>
+        </Button>
       </Header>
-      <View>
-        <Text>Hello</Text>
+      <View
+        style={{
+          flex: 1,
+        }}
+      >
+        <TopDeals />
+        <ImageSliderBox
+          data={[
+            require("../../imgs/cat-img1.jpg"),
+            require("../../imgs/cat-img2.jpg"),
+            require("../../imgs/cat-img3.jpg"),
+            require("../../imgs/cat-img4.jpg"),
+            require("../../imgs/cat-img5.jpg"),
+          ]}
+          localImg={true}
+          autoPlay={true}
+          caroselImageStyle={{ resizeMode: "contain" }}
+        />
       </View>
     </Wrapper>
   );
