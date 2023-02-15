@@ -6,15 +6,16 @@ const styles = StyleSheet.create({
     height: screenHeight / 2,
     margin: 10,
     borderRadius: 20,
-    backgroundColor: COLORS.grey,
+    backgroundColor: COLORS.black,
   },
   cover: {
     width: "100%",
     height: "40%",
     borderRadius: 20,
+    bottom: 20,
   },
   short: {
-    fontSize: SIZES.m,
+    fontSize: 10,
     fontWeight: "600",
     color: "#eee",
     // zIndex: 10000000,
