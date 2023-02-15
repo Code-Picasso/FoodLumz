@@ -25,6 +25,7 @@ const TopDeals = () => {
     <>
       <Text style={text}>TopDeals</Text>
       <FlatList
+        bounces={false}
         showsHorizontalScrollIndicator={false}
         style={listStyle}
         horizontal

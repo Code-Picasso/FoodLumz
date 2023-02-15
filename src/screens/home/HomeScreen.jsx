@@ -11,7 +11,7 @@ import TopDeals from "../../components/topDeals/TopDeals";
 
 const HomeScreen = () => {
   const images = useState();
-  const { header, headerImg } = styles;
+  const { header, headerImg, chef, special, chefDescription } = styles;
   return (
     <Wrapper>
       <Header header={header} headerImg={headerImg}>
@@ -33,6 +33,20 @@ const HomeScreen = () => {
         }}
       >
         <TopDeals />
+        <View style={{ marginTop: "20%", margin: 10, marginTop: 50, flex: 1 }}>
+          <Text style={chef}>Chef's Special</Text>
+          <Image source={require("../../imgs/cat-img5.jpg")} style={special} />
+          <Text numberOfLines={4} style={chefDescription}>
+            Incididunt dolore mollit commodo eu sint et. Officia adipisicing
+            occaecat exercitation pariatur pariatur in sint ut amet sunt nostrud
+            anim Lorem quis. Ad sunt cupidatat voluptate ad amet enim dolor non.
+            Sit officia magna Lorem labore deserunt eu dolore incididunt non
+            incididunt id consequat nostrud fugiat. Mollit pariatur consectetur
+            aliqua est laboris laboris eiusmod. Dolor consectetur reprehenderit
+            aute commodo ipsum adipisicing magna in mollit do consequat
+            incididunt irure.
+          </Text>
+        </View>
       </View>
     </Wrapper>
   );
