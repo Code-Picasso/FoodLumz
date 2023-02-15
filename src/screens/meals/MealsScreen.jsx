@@ -1,11 +1,31 @@
-import { View, Text } from "react-native";
+import { View, Text, Image } from "react-native";
 import React from "react";
-
+import styles from "../home/Style";
+import Wrapper from "../../components/wrapper/Wrapper";
+import Header from "../../components/header/Header";
+import Button from "../../components/button/Button";
+import Ionicons from "@expo/vector-icons/Ionicons";
 const MealsScreen = () => {
+  const { header, headerImg, menu } = styles;
   return (
-    <View>
-      <Text>MealsScreen</Text>
-    </View>
+    <Wrapper>
+      <Header header={header} headerImg={headerImg}>
+        <Button btnStyle={{ bottom: "2%", left: 15 }}>
+          <Ionicons name="exit" size={24} color="#d3d3d3" />
+        </Button>
+
+        <Image
+          source={require("../../imgs/spalsh-img.png")}
+          style={headerImg}
+        />
+        <Button btnStyle={{ bottom: "2%", right: 15 }}>
+          <Ionicons name="cart" size={24} color="#ffffff" />
+        </Button>
+      </Header>
+      <View>
+        <Text style={menu}>Our Menu</Text>
+      </View>
+    </Wrapper>
   );
 };
 
