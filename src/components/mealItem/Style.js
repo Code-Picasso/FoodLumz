@@ -6,13 +6,14 @@ const styles = StyleSheet.create({
     height: screenHeight / 2,
     margin: 10,
     borderRadius: 20,
-    backgroundColor: COLORS.black,
+    backgroundColor: COLORS.grey,
   },
   cover: {
     width: "100%",
     height: "40%",
-    borderRadius: 20,
-    bottom: 20,
+    bottom: 25,
+    borderTopRightRadius: 20,
+    borderTopLeftRadius: 20,
   },
   short: {
     fontSize: 10,

@@ -5,6 +5,7 @@ import Wrapper from "../../components/wrapper/Wrapper";
 import Header from "../../components/header/Header";
 import Button from "../../components/button/Button";
 import Ionicons from "@expo/vector-icons/Ionicons";
+import Spicey from "../../components/menu-1/Spicey";
 const MealsScreen = () => {
   const { header, headerImg, menu } = styles;
   return (
@@ -24,6 +25,7 @@ const MealsScreen = () => {
       </Header>
       <View>
         <Text style={menu}>Our Menu</Text>
+        <Spicey />
       </View>
     </Wrapper>
   );
