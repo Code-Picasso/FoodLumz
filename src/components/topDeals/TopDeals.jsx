@@ -8,18 +8,6 @@ import styles from "./Style";
 const TopDeals = () => {
   const { listStyle, text } = styles;
   const { navigate } = useNavigation();
-  //   const RenderTopDeals = useCallback(() => {
-  //     return (
-  //       <MealItem
-  //         description={item.description}
-  //         img={item.image}
-  //         onPress={() => {
-  //           cons.log("hello");
-  //         }}
-  //         price={item.price}
-  //       />
-  //     );
-  //   }, []);
 
   return (
     <>
