@@ -1,5 +1,6 @@
 import { StyleSheet } from "react-native";
 import { COLORS, SIZES, screenHeight, screenWidth } from "../../style/index";
+import { isAndroid } from "../../style/metrics";
 const styles = StyleSheet.create({
   header: {
     width: screenWidth,
@@ -20,7 +21,9 @@ const styles = StyleSheet.create({
     color: COLORS.red,
   },
   menu: {
-    fontSize: 20,
+    fontSize: 25,
+    fontWeight: "bold",
+    margin: 10,
   },
 });
 export default styles;

@@ -1,6 +1,6 @@
 import { View, Text, Image } from "react-native";
 import React from "react";
-import styles from "../home/Style";
+import styles from "./Style";
 import Wrapper from "../../components/wrapper/Wrapper";
 import Header from "../../components/header/Header";
 import Button from "../../components/button/Button";
