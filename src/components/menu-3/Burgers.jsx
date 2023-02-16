@@ -11,7 +11,7 @@ const Burgers = () => {
 
   return (
     <>
-      <Text style={text}>Snacks</Text>
+      <Text style={text}>Burgers</Text>
       <FlatList
         bounces={false}
         showsHorizontalScrollIndicator={false}

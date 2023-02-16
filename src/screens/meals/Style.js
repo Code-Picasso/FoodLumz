@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
   menu: {
     fontSize: 25,
     fontWeight: "bold",
-    margin: 10,
+    margin: 15,
   },
 });
 export default styles;

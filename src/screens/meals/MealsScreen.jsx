@@ -6,6 +6,8 @@ import Header from "../../components/header/Header";
 import Button from "../../components/button/Button";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import Spicey from "../../components/menu-1/Spicey";
+import Snacks from "../../components/menu-2/Snacks";
+import Burgers from "./../../components/menu-3/Burgers";
 const MealsScreen = () => {
   const { header, headerImg, menu } = styles;
   return (
@@ -26,6 +28,8 @@ const MealsScreen = () => {
       <View>
         <Text style={menu}>Our Menu</Text>
         <Spicey />
+        <Snacks />
+        <Burgers />
       </View>
     </Wrapper>
   );
