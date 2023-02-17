@@ -24,7 +24,14 @@ const Snacks = () => {
               description={item.item.description}
               img={item.item.image}
               price={item.item.price}
-              onPress={() => navigate("Detail")}
+              onPress={() => {
+                navigate("Detail"),
+                  {
+                    mealId: item.item.id,
+                    mealImg: item.item.image,
+                    mealDesc: item.item.description,
+                  };
+              }}
             />
           );
         }}

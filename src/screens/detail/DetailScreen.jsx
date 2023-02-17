@@ -5,11 +5,13 @@ import Wrapper from "../../components/wrapper/Wrapper";
 import Header from "../../components/header/Header";
 import Button from "../../components/button/Button";
 import Ionicons from "@expo/vector-icons/Ionicons";
-import Spicey from "../../components/menu-1/Spicey";
-import Snacks from "../../components/menu-2/Snacks";
-import Burgers from "./../../components/menu-3/Burgers";
+
 import { screenHeight, screenWidth } from "../../style/metrics";
+import { useRoute } from "@react-navigation/native";
 const DetailScreen = () => {
+  const route = useRoute();
+  const meal = route.params.mealImg;
+  const short = route.params.mealDesc;
   const { header, headerImg, detailImg, mealDesc } = styles;
   return (
     <Wrapper>
@@ -34,16 +36,8 @@ const DetailScreen = () => {
           marginTop: screenHeight / 10,
         }}
       >
-        <Image source={require("../../imgs/cat-img4.jpg")} style={detailImg} />
-        <Text style={mealDesc}>
-          Occaecat esse sunt nulla est quis incididunt velit pariatur deserunt
-          sunt pariatur. Ad adipisicing do nisi consequat commodo culpa officia.
-          Occaecat Lorem occaecat pariatur do. Ut eu ex proident mollit minim
-          deserunt ea adipisicing officia sunt et cillum. Veniam veniam culpa
-          exercitation laborum qui anim. Veniam adipisicing occaecat duis veniam
-          reprehenderit laborum reprehenderit et. Non cillum ea dolore ex velit
-          nostrud minim proident officia do laborum enim qui ullamco.
-        </Text>
+        <Image source={meal} style={detailImg} />
+        <Text style={mealDesc}>{short}</Text>
       </View>
     </Wrapper>
   );
