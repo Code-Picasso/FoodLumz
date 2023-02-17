@@ -9,7 +9,10 @@ import CartScreen from "../../screens/cart/CartScreen";
 
 const AppNav = () => {
   return (
-    <AppStack.Navigator screenOptions={{ headerShown: false }}>
+    <AppStack.Navigator
+      initialRouteName="Detail"
+      screenOptions={{ headerShown: false }}
+    >
       <AppStack.Group>
         <AppStack.Screen name="Home" component={HomeScreen} />
         <AppStack.Screen name="Detail" component={DetailScreen} />
