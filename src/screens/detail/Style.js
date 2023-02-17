@@ -1,62 +1,39 @@
 import { StyleSheet } from "react-native";
 import { COLORS, SIZES, screenHeight, screenWidth } from "../../style/index";
-import { isIos } from "../../style/metrics";
+import { isAndroid } from "../../style/metrics";
 const styles = StyleSheet.create({
-  card: {
-    width: screenWidth / 1.2,
-    height: screenHeight / 2,
-    alignItems: "center",
-    justifyContent: "space-evenly",
-    backgroundColor: COLORS.red,
-    borderRadius: 20,
-    flex: 1,
+  header: {
+    width: screenWidth,
+    height: screenHeight / 15,
+    justifyContent: "space-between",
+    backgroundColor: COLORS.lightRed,
+    flexDirection: "row",
   },
-  img: {
-    width: isIos ? screenWidth / 1.85 : screenWidth / 1.4,
-    height: isIos ? screenHeight / 3.75 : screenHeight / 3.1,
+  headerImg: {
+    width: "10%",
+    height: isAndroid ? "70%" : "75%",
+    top: 5,
   },
-  inputOne: {
-    width: "80%",
-    borderBottomColor: COLORS.white,
-    borderWidth: 1,
-    borderLeftWidth: 0,
-    borderRightWidth: 0,
-    borderTopWidth: 0,
-    padding: 10,
-    color: COLORS.white,
-    fontSize: SIZES.m,
+  chef: {
+    fontSize: SIZES.l,
+    fontWeight: "800",
+    bottom: screenHeight / 25,
+    color: COLORS.red,
   },
-  inputTwo: {
-    width: "80%",
-    borderBottomColor: COLORS.white,
-    borderWidth: 1,
-    borderLeftWidth: 0,
-    borderRightWidth: 0,
-    borderTopWidth: 0,
-    padding: 10,
-    color: COLORS.white,
-    fontSize: SIZES.m,
+  menu: {
+    fontSize: 25,
+    fontWeight: "bold",
+    margin: 15,
   },
-
-  loginBtn: {
-    width: "80%",
-    height: "18%",
-    backgroundColor: COLORS.pink,
-    justifyContent: "center",
-    alignItems: "center",
-    borderRadius: 50,
+  detailImg: {
+    width: screenWidth / 2,
+    height: screenHeight / 4,
+    borderRadius: 10,
   },
-  signUpBtnTxt: {
-    color: COLORS.white,
-    fontSize: 20,
+  mealDesc: {
+    padding: 30,
     fontWeight: "600",
-    fontfamily: "Inter_700Bold",
-  },
-  loginBtnTxt: {
-    color: COLORS.white,
-    fontSize: 20,
-    fontWeight: "600",
-    fontfamily: "Inter_700Bold",
+    marginBottom: screenHeight / 2,
   },
 });
 export default styles;

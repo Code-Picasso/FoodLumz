@@ -10,7 +10,7 @@ import CartScreen from "../../screens/cart/CartScreen";
 const AppNav = () => {
   return (
     <AppStack.Navigator
-      initialRouteName="Detail"
+      initialRouteName="Home"
       screenOptions={{ headerShown: false }}
     >
       <AppStack.Group>

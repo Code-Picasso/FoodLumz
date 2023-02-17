@@ -7,7 +7,6 @@ import styles from "./Style";
 import { BURGERS } from "./../../data/menu";
 const Burgers = () => {
   const { listStyle, text } = styles;
-  const { navigate } = useNavigation();
 
   return (
     <>

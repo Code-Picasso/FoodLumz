@@ -2,7 +2,9 @@ import { View, Text, Image } from "react-native";
 import React from "react";
 import Button from "./../button/Button";
 import styles from "./Style";
+import { useNavigation } from "@react-navigation/native";
 const MealItem = ({ img, description, onPress, price }) => {
+  const navigate = useNavigation();
   const { container, cover, short, priceTag } = styles;
   return (
     <Button onPress={onPress} btnStyle={container}>
